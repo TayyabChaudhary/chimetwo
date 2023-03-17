@@ -1,0 +1,62 @@
+:root{
+    --white-color: #FFFFFF;
+}
+.invest_small__container{
+    @apply container mx-auto mt-10;
+    max-width: 980px;
+}
+
+.invest_small__container h1{
+    @apply text-4xl font-medium mb-3 mt-28;
+}
+
+.invest_small__container p{
+    @apply text-lg;
+}
+
+.invest_small__container .form__selct__options{
+    @apply flex justify-between items-center pt-4;
+}
+.invest_small__container .form__selct__options form{
+    @apply relative;
+}
+.invest_small__container .form__selct__options form svg{
+    @apply absolute top-3 left-2;
+}
+.invest_small__container .form__selct__options form input{
+    @apply outline-none pl-8 text-sm w-60;
+    height: 38px!important;
+    border: none!important;
+    -webkit-box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%), 0 5px 12px 4px rgb(0 0 0 / 9%);
+    box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%), 0 5px 12px 4px rgb(0 0 0 / 9%);
+}
+
+.invest_small__container .form__selct__options .all__compain{
+    @apply w-36 flex items-center justify-between cursor-pointer h-10 pl-2 text-sm pr-3 relative;
+    box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%), 0 5px 12px 4px rgb(0 0 0 / 9%); 
+    background-color: var(--white-color);  
+}
+.invest_small__container .form__selct__options .all__compain .all__compagin__drop{
+    @apply w-36 flex flex-col gap-2 cursor-pointer h-auto pt-0 pb-0 pl-0 text-sm pr-0 absolute top-12 left-0;
+    box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%), 0 5px 12px 4px rgb(0 0 0 / 9%);   
+    background-color: var(--white-color); 
+}
+
+.invest_small__container .form__selct__options .all__compain .all__compagin__drop span{
+    @apply hover:bg-gray-50 p-2 pb-1;
+}
+
+
+@media (max-width: 909px){
+    .invest_small__container .form__selct__options form input{
+        
+    width: 158px!important;
+    font-size: 9px!important;
+
+    }.invest_small__container h1{
+        margin-left: 10px!important;
+    }
+    .invest_small__container p {
+        margin-left: 10px!important;
+    }
+}

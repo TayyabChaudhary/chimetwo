@@ -1,0 +1,67 @@
+:root{
+    --yellow-color-300: #00e193;
+    --yellow-color-400: #00e193;
+}
+.twisted__eggroll__sections{
+    @apply container mx-auto max-w-[1100px];
+}
+
+.twisted__eggroll__sections h1{
+    @apply text-3xl font-medium mt-2 mb-2;
+}
+
+.twisted__eggroll__sections .chips__sec{
+    @apply flex items-center gap-2 pt-4; 
+}
+.twisted__eggroll__sections .chips__sec .chi__ps{
+    @apply flex items-center justify-center w-auto px-4 rounded-full h-7; 
+    background-color: var(--yellow-color-300);
+}
+.twisted__eggroll__sections .chips__sec .chi__ps span{
+    @apply text-sm font-medium text-white;
+}
+
+.days__sections{
+    @apply flex gap-6;
+}
+.invest__buttons{
+    @apply mt-4 w-80 py-3 font-medium text-base text-white rounded;
+    background-color: var(--yellow-color-400);
+}
+  
+.days__sections .card img {
+    width: 720px;
+    height: 400px;
+  }
+
+
+  .days__sections .card__image__slider .slider{
+    @apply flex mt-8;
+    width: 720px;
+    overflow: hidden;
+  }
+
+  .days__sections .card__image__slider .slider img{
+    width: 170px;
+    height: 100px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  .days__sections .card__image__slider .slider img:nth-child(1){
+    margin-left: 0px;
+  }
+
+  .days__sections .card__image__slider .slider .button_controls button:nth-child(1){
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    @apply rounded-md flex justify-center items-center absolute right-0 top-11 z-50;
+  }
+  .days__sections .card__image__slider .slider .button_controls button:nth-child(2){
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    @apply rounded-md flex justify-center items-center absolute left-0 top-11 z-50;
+  }
+  

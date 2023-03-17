@@ -1,0 +1,115 @@
+.dashboard__main__section{
+    @apply bg-gray-50 min-h-screen;
+}
+
+.dashboard__main__section .dashboard__side__nav{
+    @apply fixed w-1/5 top-0 left-0 bottom-0 bg-white shadow-md;
+}
+.dashboard__main__section .dashboard__side__nav .logo__main{
+    @apply border-b border-solid p-3;
+}
+.dashboard__main__section .dashboard__side__nav .dashboard__link{
+    @apply pt-2;
+}
+.dashboard__main__section .dashboard__side__nav .dashboard__link span{
+    @apply m-3 mt-3;
+}
+.dashboard__main__section .dashboard__side__nav .dashboard__link ul{
+    @apply mt-4 mb-4;
+}
+.dashboard__main__section .dashboard__side__nav .dashboard__link ul li{
+    @apply p-3 hover:bg-black hover:text-white pl-6 cursor-pointer font-normal transition-all ease-linear border-b border-solid text-sm text-gray-400;
+}
+
+/* dashboard__top__header */
+.right__side__sec{
+    margin-left: 260px;
+}
+.dashboard__top__header{
+    @apply bg-white p-2 shadow-sm;
+}
+.dashboard__top__header .dashboard__header__icons{
+    @apply flex justify-end items-center gap-4 pr-8;
+}
+.dashboard__top__header .dashboard__header__icons .icon{
+    @apply flex flex-col justify-end items-center relative cursor-pointer;
+}
+.dashboard__top__header .dashboard__header__icons .icon .notifications_counter{
+    @apply absolute -top-1 w-4 text-white flex justify-center items-center text-sm rounded-full h-4 bg-red-500 right-4;
+}
+.dashboard__top__header .dashboard__header__icons span{
+    @apply text-xs;
+}
+.dashboard__top__header .dashboard__header__icons .my__account{
+    @apply w-7 h-7 bg-gray-50 flex justify-center items-center text-sm rounded-full;
+}
+
+/* dash banner */
+.dashboard__main__section .dash__banner{
+    background-image: url('https://images.unsplash.com/photo-1490810194309-344b3661ba39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80');
+    @apply bg-cover bg-center w-full p-4 mr-3 rounded;
+}
+.dashboard__main__section .dash__banner .dash_banner__container{
+   @apply container mx-auto flex justify-around items-center;
+}
+.dashboard__main__section .dash__banner .dash_banner__container .left__side__text{
+    @apply text-white;
+}
+.dashboard__main__section .dash__banner .dash_banner__container .left__side__text h2{
+    @apply text-white text-center text-sm;
+}
+.dashboard__main__section .dash__banner .dash_banner__container .left__side__text h1{
+    @apply text-white text-3xl;
+}
+
+.right__side__abr button{
+    @apply bg-white px-8 py-2 rounded-full text-sm flex items-center;
+}
+
+/* dash__boxed */
+.dash__boxed{
+    @apply w-full p-2 bg-white shadow-sm rounded border border-solid;
+}
+.dash__boxed h1{
+    @apply text-center text-sm;
+}
+.dash__boxed .reserve__btn{
+    @apply bg-black px-4 py-2 rounded-full text-white text-sm;
+}
+
+/* card__image__bg */
+.card__image__bg{
+    background-image: url('https://flowbite.com/docs/images/blog/image-1.jpg');
+    @apply bg-center bg-cover h-40 relative;
+}
+
+.card__image__bg .play__video{
+    @apply w-14 h-14 rounded-full flex justify-center items-center absolute;
+    background-color: rgba(0,0,0,0.2);
+    left: 42%;
+    top: 23%;
+}
+.card__image__bg .white__caai{
+    @apply w-14 h-14 rounded-full flex bg-white justify-center text-xs items-center absolute -bottom-4 right-2;
+}
+
+.triangle-down1 {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 12px solid #0075b8;
+    margin: auto;
+    position: absolute;
+    bottom: -12px;
+}
+.triangle-down2 {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 12px solid #f76542;
+    margin: auto;
+    position: absolute;
+    bottom: -12px;
+}

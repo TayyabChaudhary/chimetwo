@@ -1,0 +1,51 @@
+:root{
+    --white-background: #fff;
+    --bg-green-light-300: #00e193;
+    --text-gray-700: #374151;
+}
+
+footer{
+    background-color: var(--white-background);
+}
+footer h2{
+    color: var(--text-gray-700);
+}
+footer ul, span{
+    color: var(--text-gray-700);
+}
+.sub__small__text{
+    @apply flex flex-col;
+}
+
+.sub__small__text .star__boxes{
+    @apply flex items-center gap-2;
+}
+.sub__small__text .star__box__text__sub{
+    @apply flex items-center gap-2 pt-3;
+}
+.sub__small__text .star__box__text__sub span{
+    @apply font-bold;
+}
+.sub__small__text .star__box{
+    @apply w-8 h-8 flex justify-center items-center;
+    background-color: var(--bg-green-light-300);
+}
+
+.stars__svg2{
+    width: 260px;
+    position: absolute;
+    top: -161px;
+    height: 340px;
+    object-fit: cover;
+    left: -74px;
+}
+
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .bottom__footer__nav{
+        @apply mt-8;
+    }
+    .bottom__footer__nav .top__link__bottom{
+        display: block;
+    }
+   }

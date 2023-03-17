@@ -1,0 +1,212 @@
+:root{
+    --white-color: #FFFFFF;
+    --bg-blue-light-300: #1F73B7;
+    --border-color: #d1d5db;
+    --border-color-800: #1f2937;
+    --border-blue-800: #1e40af;
+    --border-blue-600: #2563eb;
+    --border-red-600: #dc2626;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap');
+.register__with__sections{
+    @apply flex w-full flex-nowrap gap-4 border-b border-solid;
+    border-color: var(--border-color);
+}
+.left__side__bar{
+    @apply relative p-10 min-h-screen;
+    background-color: var(--white-color);
+}
+
+.support__btn{
+    @apply fixed bottom-5 left-4 z-30;
+}
+.support__btn button{
+    @apply text-sm px-8 rounded-full flex items-center gap-2 py-3;
+    color: var(--white-color);
+    background-color: var(--bg-blue-light-300);
+}
+
+.register__with__sections .right__side__nav{
+    @apply p-10;
+}
+.register__with__sections .right__side__nav header{
+    @apply flex justify-between w-[760px];
+}
+.register__with__sections .right__side__nav header h6{
+    @apply text-4xl;
+    font-family: 'Hind', sans-serif;
+}
+
+.register__with__sections .right__side__nav header ul li button{
+    @apply border border-solid text-sm px-8 rounded-full py-2.5;
+    font-family: 'Hind', sans-serif;
+    border-color: var(--border-color-800);
+}
+
+/* social__btn */
+.social__btn{
+    @apply flex items-center gap-4 mt-8;
+}
+.social__btn button:nth-child(1){
+    @apply border border-solid px-5 py-2.5 rounded-full hover:bg-blue-800;
+    border-color: var(--border-blue-800);
+}
+.social__btn button:nth-child(1):hover svg{
+    fill: var(--white-color);
+}
+
+.social__btn button:nth-child(1) svg{
+    fill: #3c5c99;
+}
+.social__btn button:nth-child(2){
+    @apply border border-solid px-5 py-2.5 rounded-full hover:bg-red-600;
+     border-color: var(--border-red-600);
+}
+.social__btn button:nth-child(2):hover svg{
+    fill: var(--white-color);
+}
+
+.social__btn button:nth-child(2) svg{
+    fill: #dc4e41;
+}
+.social__btn button:nth-child(3){
+    @apply border border-solid px-5 py-2.5 rounded-full hover:bg-blue-600;
+    border-color: var(--border-blue-600);
+}
+.social__btn button:nth-child(3):hover svg{
+    fill: var(--white-color);
+}
+
+.select__options option{
+    font-family: 'Hind', sans-serif;
+    background-color: var(--white-color);
+    @apply border-none;
+}
+
+.social__btn button:nth-child(3) svg{
+    fill: #007bb7;
+}
+
+.or__email{
+    @apply text-3xl mb-8 mt-8;
+    font-family: 'Hind', sans-serif;
+}
+
+/* register__with__select__options */
+.register__with__select__options{
+    @apply appearance-none outline-none relative w-[500px];
+}
+
+.german__lang .edd__arroww{
+    position: absolute;
+    width: 18px;
+    height: 10px;
+    top: calc(30%);
+    right: calc(15px);
+    transition: transform 150ms;
+    pointer-events: none;
+}
+
+.german__lang .edd__arroww::before{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    top: -5px;
+    right: 0;
+    transform: rotate(45deg);
+    transform-origin: 50% 25%;
+}
+
+.register__with__select__options .edd__arrow{
+    position: absolute;
+    width: 18px;
+    height: 10px;
+    top: calc(45%);
+    right: calc(15px);
+    transition: transform 150ms;
+    pointer-events: none;
+}
+.register__with__select__options .edd__arrow::before{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    top: -5px;
+    right: 0;
+    transform: rotate(45deg);
+    transform-origin: 50% 25%;
+}
+
+/* please__note__container */
+.please__note__container{
+    @apply flex justify-center pt-10;
+}
+
+.please__note__container h1{
+    @apply text-2xl;
+}
+.please__note__containers p{
+    @apply text-sm text-center mb-14;
+}
+
+.stars__svg{
+    width: 260px;
+    position: absolute;
+    top: -169px;
+    height: 427px;
+    object-fit: cover;
+}
+
+.i__accept__terms{
+    width: 450px;
+    font-size: 13px;
+}
+
+
+@media (max-width: 640px) {
+    .register__with__sections .right__side__nav header{
+        @apply w-full items-center;
+    }
+    .register__with__sections{
+        @apply block;
+    }
+    .left__side__bar{
+        @apply hidden;
+    }
+    .register__with__sections .right__side__nav header h6{
+        @apply text-sm;
+    }
+    .right__side__nav{
+        padding: 10px!important;
+    }
+
+    .register__with__select__options{
+        @apply w-full;
+    }
+    .using__phone{
+        @apply w-full;
+    }
+    .i__accept__terms{
+        @apply w-full;
+    }
+    .register__with__sections .right__side__nav header ul li a:nth-child(1) {
+        @apply absolute left-2 top-12;
+    }
+    .stars__svg2 {
+        top: -155px!important;
+        left: -6px!important;
+    }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+ 
+}

@@ -1,0 +1,300 @@
+.banner-contaner-slider{
+    @apply min-h-screen relative;
+}
+.description{
+    @apply absolute -top-28 left-40;
+}
+.carousel-boullt{
+    @apply flex items-center justify-center absolute -bottom-16 left-48;
+}
+.carousel-boullt span{
+    @apply w-[70px] h-[3px] ml-4 rounded-full cursor-pointer;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.right__side__arrow__btn{
+    @apply absolute right-0 top-12 w-8 h-8 border-2 border-solid flex justify-center items-center rounded-full border-white hover:opacity-100;
+    opacity: .7;
+}
+.left__side__arrow__btn{
+    @apply absolute left-0 top-12 w-8 h-8 border-2 border-solid flex justify-center items-center rounded-full border-white hover:opacity-100;
+    opacity: .7;
+}
+
+.right__side__arrow__btn svg{
+    @apply fill-white;
+}
+.left__side__arrow__btn svg{
+    @apply fill-white;
+}
+
+
+.chime__banner__container{
+    @apply container mx-auto;
+}
+
+.chime__banner__container h1{
+    @apply text-7xl text-white font-bold;
+}
+.chime__banner__container .form__signup{
+    @apply flex flex-row items-center gap-6 mt-8;
+}
+.chime__banner__container .form__signup form input{
+    @apply w-96 h-12 text-base rounded-full border-none outline-none px-8;
+}
+.sub__hading{
+    @apply pt-4 flex flex-col gap-4;
+}
+.sub__hading p{
+    @apply text-white;
+}
+
+.carousel-boullt .active{
+@apply relative;
+
+}
+
+.carousel {
+    @apply min-h-screen grid relative;
+    grid-template-rows: 1fr 3fr 1.5fr;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+    row-gap: 2vh;
+  }
+  
+  .progress-bar {
+    @apply cursor-pointer absolute top-0 left-0 h-[2px] w-[70px] rounded-full;
+    background: linear-gradient(to right,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 0);
+}
+  .progress-bar__fill {
+    width: 0;
+    height: inherit;
+    background: #fff;
+    transition: all 0.16s;
+    border-radius: 50px;
+  }
+  .progress-bar--primary {
+    z-index: 2;
+  }
+  
+  .main-post-wrapper {
+    grid-row: 1/4;
+    grid-column: 1/7;
+    position: relative;
+  }
+  
+  .slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-post {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .main-post__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+  }
+  .main-post__image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-post__image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 13, 14, 0.5);
+  }
+  .main-post__content {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    color: #fff;
+    width: 90%;
+}
+  .main-post__tag-wrapper {
+    margin: 0;
+    display: inline-flex;
+    overflow: hidden;
+  }
+  .main-post__tag {
+    font-size: 0.95em;
+    background: #c20000;
+    padding: 6px 18px;
+  }
+  .main-post__title {
+    font-weight: 700;
+    font-size: 1.95em;
+    line-height: 1.25;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  .main-post__link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .main-post__link-text {
+    font-size: 0.9em;
+  }
+  .main-post__link-icon--arrow {
+    margin-left: 12px;
+  }
+  .main-post__link-icon--play-btn {
+    margin-right: 12px;
+  }
+  
+  .main-post__link:hover .main-post__link-text,
+  .main-post__link:hover .main-post__link-icon--arrow path {
+    color: #c20000;
+    stroke: #c20000;
+  }
+  
+  .main-post--active {
+    top: 0;
+    z-index: 1;
+}
+  
+  .main-post--not-active {
+    top: 100%;
+    z-index: 0;
+}
+  
+  .main-post.main-post--active .main-post__tag-wrapper {
+    width: 25%;
+}
+  
+  .main-post.main-post--not-active .main-post__tag-wrapper {
+    width: 0;
+}
+  
+  .main-post.main-post--active .main-post__title {
+    opacity: 1;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+  
+  .main-post.main-post--not-active .main-post__title {
+    opacity: 0;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+  
+  .main-post.main-post--active .main-post__link {
+   opacity: 1;
+   transition: 2s;
+   -webkit-transition: 2s;
+   -moz-transition: 2s;
+   -ms-transition: 2s;
+   -o-transition: 2s;
+}
+  
+  .main-post.main-post--not-active .main-post__link {
+    opacity: 0;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+  
+  .posts-wrapper {
+    grid-row: 3;
+    grid-column: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 0.1fr);
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+    z-index: 1;
+    position: relative;
+    bottom: -144px;
+    left: 50px;
+  }
+  
+  .post {
+    position: relative;
+    padding: 16px 20px;
+  }
+  .post__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+  }
+  .post__tag {
+    color: #80837e;
+  }
+  .post__title {
+    font-weight: 400;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  .post--active {
+    opacity: 1;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+  }
+  .post:not(.post--active) {
+    pointer-events: none;
+  }
+  
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .main-post__title {
+      font-size: 2.9em;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .hide-on-mobile {
+      display: grid;
+    }
+  
+    .posts-wrapper {
+      grid-column: 3/6;
+    }
+  
+    .hide-on-desktop {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .main-post__content {
+      width: 45%;
+    }
+  
+    .posts-wrapper {
+      grid-column: 3/6;
+    }
+  }
